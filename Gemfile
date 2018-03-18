@@ -8,6 +8,8 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.5'
+
+gem 'pry'
 # Use sqlite3 as the database for Active Record
 group :development do
   gem 'sqlite3'
@@ -15,7 +17,21 @@ end
 group :production do
   gem 'pg'
 end
+
 gem 'carrierwave'
+
+gem 'mini_magick', '3.8.0'
+
+gem 'devise'
+
+gem 'gravtastic'
+
+gem 'devise'
+
+gem 'activeadmin', github: 'activeadmin'
+
+gem 'inherited_resources', github: 'activeadmin/inherited_resources'
+
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
@@ -45,6 +61,7 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+  gem 'rspec-rails', '~> 3.5'
 end
 
 group :development do
